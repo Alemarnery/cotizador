@@ -20,6 +20,14 @@ export function calcularMarca(marca) {
     default:
       break;
   }
-
   return incremento;
+}
+
+//Calcula el tio de seguro
+export function obtenerPlan(plan) {
+  return plan === "basico" ? 1.2 : 1.5;
+}
+
+export function primerMayuscula(texto) {
+  return texto.charAt(0).toUpperCase() + texto.slice(1);
 }
